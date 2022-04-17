@@ -3,12 +3,15 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby "3.0.2"
 
+gem "activeadmin", "~> 2.11"
 gem "bootsnap", require: false
+gem "devise"
 gem "importmap-rails"
 gem "pg", "~> 1.3"
 gem "puma", "~> 5.0"
 gem "rails", "~> 7.0.2", ">= 7.0.2.3"
 gem "sprockets-rails"
+gem "sass-rails", "~> 6.0"
 gem "stimulus-rails"
 gem "turbo-rails"
 gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
@@ -53,4 +56,3 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
-
