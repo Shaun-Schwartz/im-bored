@@ -1,10 +1,10 @@
-<h1>Activities#random</h1>
+<%= turbo_frame_tag 'random_activity_frame' do %>
+  <h1>Activities#random</h1>
 
-<div class="control-container">
-  <div class="control-statement-button-container">
-    <div class="control-statement">
-      What should I do? 
+  <main class="container">
+    <div class="header">
+      <h1><%= @activity.name %></h1>
     </div>
-    <button type="button">Tell me</button>
-  </div>
-</div>
+  </main>
+  <%= link_to "I'm still Bored", random_path, data: { turbo_frame: "random_activity_frame" }, class: 'btn btn--primary' %>
+<% end %>
