@@ -5,15 +5,15 @@ ruby "3.0.2"
 
 gem "activeadmin", "~> 2.11"
 gem "bootsnap", require: false
-gem "devise"
-gem "importmap-rails"
+gem "devise", "~> 4.8.1"
+gem "importmap-rails", "~> 1.0.3"
 gem "pg", "~> 1.3"
 gem "puma", "~> 5.0"
 gem "rails", "~> 7.0.2", ">= 7.0.2.3"
-gem "sprockets-rails"
+gem "sprockets-rails", "~> 3.4.2"
 gem "sass-rails", "~> 6.0"
-gem "stimulus-rails"
-gem "turbo-rails"
+gem "stimulus-rails", "~> 1.0.4"
+gem "turbo-rails", "~> 1.0.1"
 gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
