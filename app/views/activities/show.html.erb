@@ -1,8 +1,6 @@
-<main class='container'>
-  <%= turbo_frame_tag 'random_activity_frame' do %>
-    <div class='header'>
-      <h1>Activities</h1>
-      <%= link_to "I'm Bored", random_path, class: 'btn btn--primary' %>
-    </div>
-  <% end %>
-</main>
+<%= turbo_frame_tag 'random_activity_frame' do %>
+  <main class='container'>
+    <h2>Looking for something to do? Click the button below!</h2>
+    <%= link_to "I'm Bored", random_path, class: 'btn' %>
+  </main>
+<% end %>
