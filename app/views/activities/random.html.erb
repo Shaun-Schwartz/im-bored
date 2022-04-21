@@ -1,7 +1,7 @@
 <%= turbo_frame_tag 'random_activity_frame' do %>
   <main class="container">
     <h2>Why not</h2>
-    <h2 class="fade-in-text"><%= @activity.name %></h2>
+    <h2 class="fade-in-text"><%= link_to_activity(@activity) %></h2>
     <%= link_to "I'm still bored", random_path, 
         data: { turbo_frame: "random_activity_frame" }, 
         class: 'btn' %>
